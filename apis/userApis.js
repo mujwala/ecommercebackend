@@ -19,10 +19,10 @@ const auth_user=async(req,res)=>{
 }
 const user_inserted = async (req, res) => {
     const user = new User({
-        u_serid:req.body.userid,
+        u_serid:req.body.u_serid,
         u_name:req.body.u_name,
         u_pwd:req.body.u_pwd,
-        u_u_email:req.body.u_email,
+        u_u_email:req.body.u_u_email,
         u_addr:req.body.u_addr,
         u_contact:req.body.u_contact
     });
